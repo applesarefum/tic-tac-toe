@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
+import symbols as s
 board=[
-         ['','',''],['','',''],['','','']
+         [' ',' ',' '],[' ',' ',' '],[' ',' ',' ']
       ]
-
+print(s.ulcor+s.hline+s.uedge+s.hline+s.uedge+s.urcor)
