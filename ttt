@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
-import symbols as s
+from symbols import *
 board=[
-         [' ',' ',' '],[' ',' ',' '],[' ',' ',' ']
-      ]
-print(s.ulcor+s.hline+s.uedge+s.hline+s.uedge+s.urcor)
+['X','O',' '],
+[' ','X',' '],
+[' ',' ','O']
+]
+def printBoard(board):
+print(tlcor+3*hline+tedge+3*hline+tedge+3*hline+trcor)
+print(vline+' '+'X'+' '+vline+' '+'O'+' '+vline+' '+' '+' '+vline)
+print(ledge+3*hline+cross+3*hline+cross+3*hline+redge)
+print(vline+' '+' '+' '+vline+' '+'X'+' '+vline+' '+' '+' '+vline)
+print(ledge+3*hline+cross+3*hline+cross+3*hline+redge)
+print(vline+' '+' '+' '+vline+' '+' '+' '+vline+' '+'O'+' '+vline)
+print(blcor+3*hline+bedge+3*hline+bedge+3*hline+brcor)
